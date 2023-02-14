@@ -1,5 +1,7 @@
 package com.cos.aop.repository;
 
+import com.cos.aop.domain.JoinReqDto;
+import com.cos.aop.domain.UpdateReqDto;
 import com.cos.aop.domain.User;
 import org.springframework.stereotype.Repository;
 
@@ -21,7 +23,18 @@ public class UserRepository {
         return new User(1, "kim", "1234", "01012341234");
     }
 
-    public void save(User user) {
+    public void save(JoinReqDto dto) {
         System.out.println("DB에 insert하기");
+    }
+
+    public void delete(int id) {
+        System.out.println("DB에 삭제하기");
+    }
+
+    public void update(int id, UpdateReqDto dto) {
+        // DAO 연결해서 실행하다가 익섹션 터짐
+        throw new IllegalArgumentException("아규먼트를 잘못 넣음");
+        // 알아서 에러요청으로 반환
+        // System.out.println("DB에 수정하기");
     }
 }
