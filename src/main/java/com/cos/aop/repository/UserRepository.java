@@ -1,7 +1,7 @@
 package com.cos.aop.repository;
 
-import com.cos.aop.domain.JoinReqDto;
-import com.cos.aop.domain.UpdateReqDto;
+import com.cos.aop.dto.JoinReqDto;
+import com.cos.aop.dto.UpdateReqDto;
 import com.cos.aop.domain.User;
 import org.springframework.stereotype.Repository;
 

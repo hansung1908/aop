@@ -1,4 +1,4 @@
-package com.cos.aop.domain;
+package com.cos.aop.dto;
 
 import lombok.Data;
 
