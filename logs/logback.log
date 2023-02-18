@@ -1,2 +1,4 @@
-[2023-02-17 23:39:49:20744][http-nio-8080-exec-1] WARN  com.cos.aop.config.BindingAdvice - com.cos.aop.controller.UserController.save() -> 필드: username, 메세지: 유저네임을 입력하세요.
-[2023-02-17 23:39:58:29070][http-nio-8080-exec-2] WARN  com.cos.aop.config.BindingAdvice - com.cos.aop.controller.UserController.save() -> 필드: username, 메세지: 유저네임을 입력하세요.
+[2023-02-18 23:46:32:17467][http-nio-8080-exec-1] WARN  com.cos.aop.config.BindingAdvice - com.cos.aop.controller.UserController.save() -> 필드: username, 메세지: 유저네임을 입력하세요.
+[2023-02-18 23:47:59:5312][http-nio-8080-exec-1] WARN  com.cos.aop.config.BindingAdvice - com.cos.aop.controller.UserController.save() -> 필드: username, 메세지: 유저네임을 입력하세요.
+[2023-02-18 23:48:48:54155][http-nio-8080-exec-2] WARN  com.cos.aop.config.BindingAdvice - com.cos.aop.controller.UserController.save() -> 필드: username, 메세지: 유저 네임 길이를 초과하셨습니다.
+[2023-02-18 23:59:11:379233][http-nio-8080-exec-7] WARN  com.cos.aop.config.BindingAdvice - com.cos.aop.controller.UserController.update() -> 필드: password, 메세지: 비밀번호가 없습니다.

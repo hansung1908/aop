@@ -1,0 +1,3 @@
+sentry:
+  dsn: https://7994085ee9a04b0a90dad913293802ff@o4504695938220032.ingest.sentry.io/4504701507141632
+  traces-sample-rate: 1.0
