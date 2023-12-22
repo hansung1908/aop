@@ -1,7 +1,6 @@
 package com.cos.aop.config;
 
 import com.cos.aop.dto.CommonDto;
-import io.sentry.Sentry;
 import jakarta.servlet.http.HttpServletRequest;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -67,7 +66,6 @@ public class BindingAdvice {
                         log.warn(type + "." + method + "() -> 필드: " + error.getField() + ", 메세지: " + error.getDefaultMessage());
                         // 로그를 파일로 생성하면 관리가 힘들어 진다.
                         log.debug(type + "." + method + "() -> 필드: " + error.getField() + ", 메세지: " + error.getDefaultMessage());
-                        Sentry.captureMessage(type + "." + method + "() -> 필드: " + error.getField() + ", 메세지: " + error.getDefaultMessage());
                     }
 
                     return new CommonDto<>(HttpStatus.BAD_REQUEST.value(), errorMap);
