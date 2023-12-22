@@ -1,6 +1,5 @@
 package com.cos.aop.config;
 
-import io.sentry.Sentry;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +11,6 @@ public class MyExceptionHandler {
 
     @ExceptionHandler(value = IllegalArgumentException.class)
     public String handlerArgument(IllegalArgumentException e) {
-        Sentry.captureException(e);
         return e.getMessage();
     }
 }
