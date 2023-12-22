@@ -15,3 +15,31 @@
 ### logback 설정
 - java legacy, spring의 경우, logback.xml 참조
 - spring boot의 경우, logback-spring.xml 참
+
+### log level
+- error : 로직 수행 중에 오류가 발생한 경우, 시스템적으로 심각한 문제가 발생하여 작동이 불가한 경우
+- warn : 시스템 에러의 원인이 될 수 있는 경고 레벨, 처리 가능한 사항
+- info : 상태변경과 같은 정보성 메시지
+- debug : 어플리케이션의 디버깅을 위한 메시지 레벨
+- trace : debug 레벨보다 더 디테일한 메시지를 표현하기 위한 레벨
+- 로그 레벨을 info로 설정하면 trace, debug 레벨은 출력 안됨
+
+### pattern
+- %Logger{length} : Logger Name
+- %-5level : 로그 레벨, -5는 출력의 고정폭 값
+- %msg : 로그 메세지 영역 (==%message)
+- ${PID:-} : 프로세스 id
+- %d : 로그 기록 시간
+- %p : 로깅 레벨
+- %F : 로깅이 발생한 프로그램 파일명
+- %M : 로깅이 발생한 메소드의 이름
+- %l : 로깅이 발생한 호출지의 정보
+- %L : 로깅이 발생한 호출지의 라인 수
+- %thread : 현재 Thread 명
+- %t : 로깅이 발생한 Thread 명
+- %c : 로깅이 발생한 카테고리
+- %C : 로깅이 발생한 클래스 명
+- %m : 로그 메시지
+- %n : 줄바꿈
+- %% : % 출력
+- %r : 어플리케이션 실행 후 로깅이 발생한 시점까지의 시
