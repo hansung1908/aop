@@ -14,7 +14,7 @@
 
 ### logback 설정
 - java legacy, spring의 경우, logback.xml 참조
-- spring boot의 경우, logback-spring.xml 참
+- spring boot의 경우, logback-spring.xml 참조
 
 ### log level
 - error : 로직 수행 중에 오류가 발생한 경우, 시스템적으로 심각한 문제가 발생하여 작동이 불가한 경우
